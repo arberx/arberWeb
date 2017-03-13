@@ -1,14 +1,15 @@
 /* Custom Stylesheet */
-@font-face { font-family: roboto; src: url('fonts/roboto/Roboto-Bold.eot'); } 
 
-
-
-/*
-#name{
-    font-family: ;
-    font-size: 32px;
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
 }
-*/
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
 
 #container1{
   font-family: monospace;
@@ -17,9 +18,9 @@
   margin: auto;
   top: 0;
   right: 0;
-  bottom: 200px;
+  bottom: 175px;
   left: 0;
-  width: 300px;
+  width: 700px;
   height: 200px;
   border: none !important;
 }
