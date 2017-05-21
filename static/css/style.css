@@ -5,6 +5,10 @@ body, h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+.name {
+    font-family: 'Monoton', cursive;
+}
+
 .intro-message {
     position: relative;
     padding-top: 0%;
@@ -24,6 +28,7 @@ body, h1, h2, h3, h4, h5, h6 {
   height: 300px;
   border: none !important;
 }
+
 /* ---- particles.js container ---- */
 
 #particles-js {
