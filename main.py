@@ -1,5 +1,19 @@
 from flask import *
 from flask_bootstrap import Bootstrap
+from flask_letsencrypt import LetsEncrypt
+
+responses = {
+        'foo': 'bar',
+        'baz': 'gak',
+    }
+
+def handle_letsencrypt_challenge(challenge):
+    return responses.get(challenge, None)
+
+app = Flask('app')
+le = LetsEncrypt(app)
+le.challenge_loader(handle_letsencrypt_challenge)
+
 app = Flask(__name__)
 Bootstrap(app)
 '''
