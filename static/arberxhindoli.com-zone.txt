@@ -1,0 +1,9 @@
+$ORIGIN arberxhindoli.com.
+$TTL 1800
+arberxhindoli.com. IN SOA ns1.digitalocean.com. hostmaster.arberxhindoli.com. 1494730335 10800 3600 604800 1800
+arberxhindoli.com. 1800 IN NS ns1.digitalocean.com.
+arberxhindoli.com. 1800 IN NS ns2.digitalocean.com.
+arberxhindoli.com. 1800 IN NS ns3.digitalocean.com.
+arberxhindoli.com. 3600 IN A 138.197.27.109
+arberxhindoli.com. 3600 IN A 138.197.27.109
+www.arberxhindoli.com. 43200 IN CNAME arberxhindoli.com.
