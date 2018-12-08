@@ -1,2 +1,7 @@
 __pycache__
 .vscode
+*.swp
+*.swo
+*env/
+*.egg-info
+node_modules
