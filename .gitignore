@@ -4,5 +4,6 @@ __pycache__
 *.swo
 *env/
 *.egg-info
-node_modules
-*.sock
+node_modules*
+dist/
+package-lock.json
