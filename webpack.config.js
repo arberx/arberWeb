@@ -1,10 +1,11 @@
 const webpack = require('webpack');
+const path = require('path')
 
 const config = {
-    entry:  __dirname + '/static/js/tutor.jsx',
+    entry:  path.join(__dirname, '/js/index.jsx'),
     output: {
-        path: __dirname + '/dist',
-        filename: 'bundle.js',
+      path: path.join(__dirname, '/static/js/'),
+      filename: 'bundle.js',
     },
     resolve: {
         extensions: ['.js', '.jsx', '.css']

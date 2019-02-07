@@ -18,6 +18,11 @@ def main_led_route():
     """ Main route, serves index.html """ 
     return render_template('index.html')
 
+@app.route('/tutor', methods=["GET"])
+def tutor_route():
+    """ Route is the entry point for REACT app """
+    return render_template('tutor.html')
+
 @app.route('/.well-known/acme-challenge/<token_value>')
 def letsencrpyt(tmp):
     """ Letsencrypt server challenge. """
