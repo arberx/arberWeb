@@ -6,6 +6,7 @@ Super Simple Website made with Python-Flask. Utilizes flask-bootstrap (mobile op
 SSL layer added with https://letsencrypt.org/!
 
 ## Setup
+**Assumes using python3.6 and node 6.5+**
 
 ### Setup env's
 ```shellsession
@@ -16,11 +17,11 @@ $ nodeenv --python-virtualenv
 $ source env/bin/activate
 ```
 
-### Install dependencies
-```shellsession
-$ pip3.6 install -e .
-$ npm install .
-```
+### Install Dependencies
+```make install```
 
-### Run watcher
-``` ./arberweb/bin/arberwebrun.sh```
+### Run
+``` make run```
+
+App will be running on localhost:8000
+
