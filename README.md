@@ -23,4 +23,4 @@ $ npm install .
 ```
 
 ### Run watcher
-``` npm run watch ```
+``` ./arberweb/bin/arberwebrun.sh```
