@@ -5,7 +5,7 @@ Super Simple Website made with Python-Flask. Utilizes flask-bootstrap (mobile op
 
 SSL layer added with https://letsencrypt.org/!
 
-# Tutor
+## Setup
 
 ### Setup env's
 ```shellsession
