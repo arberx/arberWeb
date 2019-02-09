@@ -1,29 +1,26 @@
 ###
 # arberweb
 # Arber Xhindoli github:@arberx
-##
+###
 
-from flask import *
-from flask_bootstrap import Bootstrap
+import arberweb
+import flask
+import flask_bootstrap
 
-app = Flask('app')
-app = Flask(__name__)
-Bootstrap(app)
+# set up bootstap for main route
+flask_bootstrap.Bootstrap(arberweb.app)
 
-# $ export FLASK_APP=main.py
-# $ python -m flask run
-
-@app.route('/')
+@arberweb.app.route('/')
 def main_led_route():
     """ Main route, serves index.html """ 
-    return render_template('index.html')
+    return flask.render_template('index.html')
 
-@app.route('/tutor', methods=["GET"])
+@arberweb.app.route('/tutor', methods=["GET"])
 def tutor_route():
     """ Route is the entry point for REACT app """
-    return render_template('tutor.html')
+    return flask.render_template('tutor.html')
 
-@app.route('/.well-known/acme-challenge/<token_value>')
+@arberweb.app.route('/.well-known/acme-challenge/<token_value>')
 def letsencrpyt(tmp):
     """ Letsencrypt server challenge. """
     with open('.well-known/acme-challenge/{}'.format(token_value)) as f:
