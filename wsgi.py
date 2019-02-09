@@ -1,9 +1,9 @@
 ###
 # arberweb
 # Arber Xhindoli github:@arberx
-##
+###
 
-from main import app
+from arberweb import app
 
 if __name__ == "__main__":
     app.run()

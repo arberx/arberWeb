@@ -2,9 +2,9 @@ const webpack = require('webpack');
 const path = require('path')
 
 const config = {
-    entry:  path.join(__dirname, '/js/index.jsx'),
+    entry:  path.join(__dirname, '/arberweb/js/Index.jsx'),
     output: {
-      path: path.join(__dirname, '/static/js/'),
+      path: path.join(__dirname, '/arberweb/static/js/'),
       filename: 'bundle.js',
     },
     resolve: {
