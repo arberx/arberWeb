@@ -1,9 +1,9 @@
 # arber-web
 Current Website! : https://www.arberx.com/
 
-Super Simple Website made with Python-Flask. Utilizes flask-bootstrap (mobile optimized), particles.js running on an nginx server.  
+Super Simple Website made with Python-Flask. Utilizes flask-bootstrap (mobile optimized), particles.js running on an nginx server.
 
-SSL layer added with https://letsencrypt.org/!
+**Not included is the nginx server configuration.** See [this](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04) great `digitalocean` guide to run a flask app on a nginx server.
 
 ## Setup
 **Assumes using python3.6 and node 6.5+**
@@ -24,4 +24,3 @@ $ source env/bin/activate
 ``` make run```
 
 App will be running on localhost:8000
-
