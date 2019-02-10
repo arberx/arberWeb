@@ -7,4 +7,4 @@ __pycache__
 node_modules*
 bundle.js
 package-lock.json
-server_secrets.py
+server_secret.py

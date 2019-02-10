@@ -1,7 +1,0 @@
-###
-# arberweb
-# Arber Xhindoli github:@arberx
-###
-
-### DO NOT COMMIT
-SECRET_KEY = b'\t\xc5\x1e\xdc\xdd\xab\x18\xf6C\n\xc8\xb2-\xe8\x1f\xc4\x02I\xb5\xd1(\xf8u\xa8'

@@ -9,11 +9,11 @@
 # os.urandom(24)
 
 import os
-import arberweb.server_secrets
+import arberweb.server_secret
 
 # Root of this application, useful if it doesn't occupy an entire domain
 APPLICATION_ROOT = '/'
 
 # cookie info
-SECRET_KEY = arberweb.server_secrets.SECRET_KEY
+SECRET_KEY = arberweb.server_secret.SECRET_KEY
 SESSION_COOKIE_NAME = 'arberweb_cookie'
