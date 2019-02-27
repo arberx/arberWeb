@@ -20,8 +20,13 @@ def tutor_route():
     """ Route is the entry point for REACT app """
     return flask.render_template('tutor.html')
 
+@arberweb.app.route('/robots.txt')
+def static_route():
+    """ Route serves robots.txt from /static folder """
+    return flask.send_from_directory(arberweb.app.static_folder, "robots.txt")
+
 @arberweb.app.route('/.well-known/acme-challenge/<token_value>')
-def letsencrpyt(tmp):
+def lets_encrpyt(tmp):
     """ Letsencrypt server challenge. """
     with open('.well-known/acme-challenge/{}'.format(token_value)) as f:
         answer = f.readline().strip()

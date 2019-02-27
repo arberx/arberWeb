@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /static/Arber_Xhindoli_Resume.pdf
