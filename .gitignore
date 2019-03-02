@@ -5,6 +5,6 @@ __pycache__
 *env/
 *.egg-info
 node_modules*
-*/bundle.js
+arberweb/static/js/bundle.js
 package-lock.json
 server_secret.py

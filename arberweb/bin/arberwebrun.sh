@@ -17,4 +17,4 @@ export ARBERWEB_SETTINGS=config.py
  npm run watch &
 
 # Run development server
-flask run --port 8000
+flask run --port 5000
