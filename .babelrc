@@ -1,5 +1,12 @@
 {
   "plugins": [
-    ["transform-react-jsx"]
+    ["import", 
+        { 
+        "libraryName": "antd", 
+        "libraryDirectory": "es", 
+        "style": "css"
+        }
+    ],
+    ["transform-react-jsx"]  
   ]
 }
