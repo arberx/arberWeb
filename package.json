@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arberx/arberWeb.git"
+    "url": "git+https://github.com/arberx/arber-web.git"
   },
   "author": "Arber Xhindoli (arberx)",
   "bugs": {
-    "url": "https://github.com/arberx/arberWeb/issues"
+    "url": "https://github.com/arberx/arber-web/issues"
   },
-  "homepage": "https://github.com/arberx/arberWeb#readme",
+  "homepage": "https://github.com/arberx/arber-web#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
@@ -26,6 +26,7 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-react-css-modules": "^5.0.0",
+    "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "css-loader": "^2.1.0",
     "style-loader": "^0.23.1",
@@ -33,8 +34,8 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "antd": "^3.13.6",
     "react": "^16.8.3",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "styled-components": "^4.1.3"
   }
 }
