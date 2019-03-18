@@ -1,3 +1,8 @@
+/*
+arberweb
+Arber Xhindoli github:@arberx
+*/
+
 const webpack = require('webpack');
 const path = require('path')
 
