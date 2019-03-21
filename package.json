@@ -36,6 +36,7 @@
   "dependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.1",
+    "react-headroom": "^2.2.8",
     "styled-components": "^4.1.3"
   }
 }
