@@ -8,3 +8,4 @@ node_modules*
 arberweb/static/js/bundle.js
 package-lock.json
 server_secret.py
+*.DS_Store
