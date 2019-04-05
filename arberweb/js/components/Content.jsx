@@ -36,20 +36,21 @@ const Row2 = styled.div`
 `;
 
 const subjectArray = ['AP CompSci.', 'Java.', 'C++.', 'Python.', 'Web Dev.', 'JavaScript.', 'C.', 'Physics.', 'Math.'];
+
 export default class Content extends React.Component {
     constructor(props) {
         super(props);
     }
-    render () {
-        return(
+    render() {
+        return (
             <ContentDiv>
                 <Row1>
                     My name is Arber and I teach
                 </Row1>
                 <Row2>
-                    <TextLoop children={subjectArray} interval={3000}/>
+                    <TextLoop children={subjectArray} interval={3000} />
                 </Row2>
             </ContentDiv>
-         )
+        )
     }
 };

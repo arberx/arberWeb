@@ -14,10 +14,10 @@ import FormContainer from "./components/Form";
 export default class App extends React.Component {
   constructor(props) {
     // TODO: add loading icon on componentWillMount
-        super(props);
-        this.state = { about_clicked: false };
-        this.replaceContent = this.replaceContent.bind(this);
-        this.mainClicked = this.mainClicked.bind(this);
+    super(props);
+    this.state = { about_clicked: false };
+    this.replaceContent = this.replaceContent.bind(this);
+    this.mainClicked = this.mainClicked.bind(this);
   }
 
   mainClicked() {
@@ -26,19 +26,19 @@ export default class App extends React.Component {
   }
 
   replaceContent() {
-     // this function will be passed as a callback to Header
+    // this function will be passed as a callback to Header
     this.state.about_clicked ? this.setState({ about_clicked: false }) :
-                               this.setState({ about_clicked: true });
+      this.setState({ about_clicked: true });
   }
-    
-  render () {
-    const isClicked = this.state.about_clicked;
-    let MainContent = isClicked ? <About/> : <Content/> ;
 
-    return(
+  render() {
+    const isClicked = this.state.about_clicked;
+    let MainContent = isClicked ? <About /> : <Content />;
+
+    return (
       <RootGrid>
         <HeaderComp onClickAbout={this.replaceContent} onClickMain={this.mainClicked} />
-        { MainContent }
+        {MainContent}
         {/* <FormContainer/> */}
       </RootGrid>
     )
