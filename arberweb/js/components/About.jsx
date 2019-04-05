@@ -12,10 +12,10 @@ export default class About extends React.Component {
      constructor(props) {
           super(props);
      }
-     render () {
-          return(
-              <ContentDiv>
-                About
+     render() {
+          return (
+               <ContentDiv>
+                    About
               </ContentDiv>
           )
      }

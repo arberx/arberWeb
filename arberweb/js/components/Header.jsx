@@ -65,7 +65,7 @@ export default class HeaderComp extends React.Component {
                <HeaderDiv>
                     <LogoDiv>
                          <a href="" onClick={onClickMain}>
-                              <img style={{width: '200px', height: '200px'}} src="../../static/ax logo/axlogo2withtext.svg" alt={"Arber X"} />
+                              <img style={{ width: '200px', height: '200px' }} src="../../static/ax logo/axlogo2withtext.svg" alt={"Arber X"} />
                          </a>
                     </LogoDiv>
                     <MenuDiv>

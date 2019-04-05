@@ -9,7 +9,7 @@ import { device } from './MediaBreak';
 /*
     This component wraps content using RootGrid as a template.
 */
-const ContentDiv = styled.div `
+const ContentDiv = styled.div`
     grid-column: rside / lside;
     grid-row: third-line / last-line;
     display: flex;
