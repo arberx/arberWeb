@@ -42,6 +42,8 @@ const MenuDiv = styled.div`
 const ButtonLink = styled.button`
      text-decoration: none;
      font-size: 20px;
+     font-weight: 600;
+     font-family: Source Sans Pro,sans-serif;
      padding: 0;
      cursor:pointer;
      border: none;
@@ -65,7 +67,8 @@ export default class HeaderComp extends React.Component {
                <HeaderDiv>
                     <LogoDiv>
                          <a href="" onClick={onClickMain}>
-                              <img style={{ width: '200px', height: '200px' }} src="../../static/ax logo/axlogo2withtext.svg" alt={"Arber X"} />
+                              {/* TODO: create img styled component, large screen, larger image  */}
+                              <img style={{ width: '200px', height: '200px' }} src="../../static/axlogo/axlogo2withtext.svg" alt={"Arber X"} />
                          </a>
                     </LogoDiv>
                     <MenuDiv>

@@ -44,6 +44,7 @@ export default class Content extends React.Component {
     render() {
         return (
             <ContentDiv>
+                {/* TODO: Larger screen indent content a little */}
                 <Row1>
                     My name is Arber and I teach
                 </Row1>
