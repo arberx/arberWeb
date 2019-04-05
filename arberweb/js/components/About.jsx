@@ -1,11 +1,12 @@
+/*
+arberweb
+Arber Xhindoli github:@arberx
+*/
 
 import React from "react";
 import styled from 'styled-components';
-
-const AboutDiv = styled.div `
-    grid-column: line1 / line2;
-    grid-row: third-line / fourth-line;
-`;
+// local includes
+import ContentDiv from "./ContentDiv";
 
 export default class About extends React.Component {
      constructor(props) {
@@ -13,9 +14,9 @@ export default class About extends React.Component {
      }
      render () {
           return(
-              <AboutDiv>
+              <ContentDiv>
                 About
-              </AboutDiv>
+              </ContentDiv>
           )
      }
 };

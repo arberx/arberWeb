@@ -9,11 +9,10 @@ import styled from 'styled-components';
 */
 const RootGrid = styled.div`
     display: grid;
-    grid-template-columns: [first] 50px [line1] auto [line2] 50px [end];
-    grid-template-rows: [row1-start] 80px [row1-end] 100px [third-line] 100px [fourth-line] auto [last-line];
-    line-height: 1.3;
     font-family: Source Sans Pro,sans-serif;
     font-size: 16px;
+    grid-template-columns: [rside] 1fr [content] 2fr [lside] 1fr;
+    grid-template-rows: [row1-start] 60px [row1-end] 60px [third-line] auto [last-line];
 `
 
 export default RootGrid;

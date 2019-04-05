@@ -39,6 +39,7 @@
     "formik": "^1.5.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-text-loop": "^2.0.1",
     "styled-components": "^4.2.0"
   }
 }
