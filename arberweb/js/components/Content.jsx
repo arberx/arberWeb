@@ -6,6 +6,7 @@ Arber Xhindoli github:@arberx
 import React from "react";
 import styled from 'styled-components';
 import TextLoop from "react-text-loop";
+import Fade from 'react-reveal/Fade';
 // local includes
 import ContentDiv from "./ContentDiv";
 import { device } from './MediaBreak';
@@ -16,8 +17,8 @@ const Row1 = styled.div`
         width: 240px;
      };
      @media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
-        width: 500px;
         font-size: 30px;
+        width: 500px;
      };
     line-height: 1.2em;
 `;
@@ -28,11 +29,11 @@ const Row2 = styled.div`
      };
      @media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
         font-size: 50px;
+        margin-left: 0;
      };
     font-weight: 900;
     display: inline-block;
-    position: relative;
-    color: black;
+    position: absoulte;
 `;
 
 const subjectArray = ['AP CompSci.', 'Java.', 'C++.', 'Python.', 'Web Dev.', 'JavaScript.', 'C.', 'Physics.', 'Math.'];
@@ -44,13 +45,14 @@ export default class Content extends React.Component {
     render() {
         return (
             <ContentDiv>
-                {/* TODO: Larger screen indent content a little */}
-                <Row1>
-                    My name is Arber and I teach
-                </Row1>
-                <Row2>
-                    <TextLoop children={subjectArray} interval={3000} />
-                </Row2>
+                <Fade left>
+                    <Row1>
+                        My name is Arber and I teach
+                    </Row1>
+                    <Row2>
+                        <TextLoop children={subjectArray} interval={3000} />
+                    </Row2>
+                </Fade>
             </ContentDiv>
         )
     }
