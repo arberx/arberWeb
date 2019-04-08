@@ -3,16 +3,20 @@ arberweb
 Arber Xhindoli github:@arberx
 */
 
-import styled from 'styled-components';
+import styled from "styled-components";
+
 /*
     Wraps all other elements, sets defaults.
 */
 const RootGrid = styled.div`
     display: grid;
-    font-family: Source Sans Pro,sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
     font-size: 16px;
     grid-template-columns: [rside] 1fr [content] 2fr [lside] 1fr;
-    grid-template-rows: [row1-start] 60px [row1-end] 60px [third-line] auto [last-line];
+    grid-template-rows: [row1-start] 60px [row1-end] 100px [third-line] 1fr [fourth-line] 1fr [fifth-line] 1fr [sixth-line];
 `
 
 export default RootGrid;
