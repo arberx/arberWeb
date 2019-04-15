@@ -40,12 +40,16 @@ const MenuDiv = styled.div`
 	 };
 `;
 
-// const ListDiv = styled.ul`
-//   @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
-// 	margin: 10px 0;
-//   };
-//   display: inline-block;
-// `;
+const ArberLogoImg = styled.img`
+  	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
+		width: 150px;
+		height: 150px;
+  	};
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
+		width: 200px;
+		height: 200px;
+	};
+`;
 
 const ButtonLink = styled.button`
 	 text-decoration: none;
@@ -79,8 +83,7 @@ export default class HeaderComp extends React.Component {
 			   <HeaderDiv>
 					<LogoDiv>
 						 <a href="" onClick={onClickMain}>
-							  {/* TODO: create img styled component, large screen, larger image  */}
-							  <img style={{ width: '150px', height: '150px' }} src="../../static/axlogo/axlogo2.svg" alt={"Arber X"} />
+							<ArberLogoImg src="../../static/axlogo/axlogo2.svg" alt="Arber X"/>
 						 </a>
 					</LogoDiv>
 					<MenuDiv>
