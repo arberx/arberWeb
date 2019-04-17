@@ -37,11 +37,11 @@
   },
   "dependencies": {
     "formik": "^1.5.1",
-    "react": "==16.8.5",
-    "react-dom": "==16.8.5",
-    "react-reveal": "==1.2.2",
-    "react-scroll": "==1.7.11",
-    "react-text-loop": "==2.0.1",
-    "styled-components": "==4.2.0"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-reveal": "^1.2.2",
+    "react-scroll": "^1.7.11",
+    "react-text-loop": "^2.0.1",
+    "styled-components": "^4.2.0"
   }
 }
