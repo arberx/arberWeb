@@ -47,7 +47,7 @@ export default class Content extends React.Component {
             <ContentDiv>
                 <Fade left>
                     <Row1>
-                        My name is Arber and I teach
+                        Hi, I'm Arber and I teach
                     </Row1>
                     <Row2>
                         <TextLoop children={subjectArray} interval={3000} />
