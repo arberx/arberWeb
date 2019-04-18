@@ -4,58 +4,35 @@ Arber Xhindoli github:@arberx
 */
 
 import React from "react";
-import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 // local includes
+import ContentDiv from "./ContentDiv";
+import { device } from "./MediaBreak";
 
-const AboutDiv = styled.div`
+const AboutFlex = styled.div`
 	display: flex;
-	flex-direction: row;
-	grid-column: rside / lside;
-	padding-top: 200px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    padding-left: 30%; 
-    grid-row: fourth-line / fifth-line;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	height: 100%;
+	align-content: space-between;
+	flex-direction: row;
 `;
 
-const PictureDiv = styled.div`
-`;
-
-const TextDiv = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-`;
-
-const WIASection = styled.section`
-`;
-
-const WCDSection = styled.section`
-`;
+const TextDiv = styled.div``;
+const PictureDiv = styled.div``;
 export default class About extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 	render() {
 		return (
-			<AboutDiv>
-				<PictureDiv>
-					Picture
-					</PictureDiv>
-				<TextDiv>
-					<WIASection>
-						<h1> Who I am </h1>
-						<p> I'm a professional software engineer</p>
-					</WIASection>
-					<WCDSection>
-						<h1> What I can do for you </h1>
-					</WCDSection>
-				</TextDiv>
-			</AboutDiv>
-		)
+			<ContentDiv row="fourth-line / fifth-line">
+				<AboutFlex>
+					<Fade left>
+						<PictureDiv>Arber's Picture</PictureDiv>
+						<TextDiv />
+					</Fade>
+				</AboutFlex>
+			</ContentDiv>
+		);
 	}
-};
+}

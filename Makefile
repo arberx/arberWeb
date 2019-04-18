@@ -9,3 +9,6 @@ install:
 
 run:
 	./arberweb/bin/arberwebrun.sh
+
+build:
+	npm run build

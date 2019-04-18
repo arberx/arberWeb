@@ -26,8 +26,9 @@ export default class App extends React.Component {
 
   replaceContent() {
     // this function will be passed as a callback to Header
-    this.state.about_clicked ? this.setState({ about_clicked: false }) :
-      this.setState({ about_clicked: true });
+    this.state.about_clicked
+      ? this.setState({ about_clicked: false })
+      : this.setState({ about_clicked: true });
   }
 
   render() {
@@ -35,11 +36,14 @@ export default class App extends React.Component {
     let MainContent = isClicked ? <About /> : <Content />;
     return (
       <RootGrid>
-        <HeaderComp onClickAbout={this.replaceContent} onClickMain={this.mainClicked} />
-        <Content/>
-        <About/>
+        <HeaderComp
+          onClickAbout={this.replaceContent}
+          onClickMain={this.mainClicked}
+        />
+        <Content />
+        <About />
         {/* <FormContainer/> */}
       </RootGrid>
-    )
+    );
   }
 }
