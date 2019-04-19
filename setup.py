@@ -13,6 +13,6 @@ setup(
     install_requires=[
         'Flask',
         'flask_bootstrap',
-        'nodeenv'
+        'gunicorn'
     ]
 )
