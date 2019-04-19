@@ -15,7 +15,6 @@ app.config.from_object('arberweb.config')
 # Overlay settings read from file specified by environment variable. This is
 # useful for using different on development and production machines.
 # Reference: http://flask.pocoo.org/docs/0.12/config/
-# TODO
 app.config.from_envvar('ARBERWEB_SETTINGS', silent=True)
 
 # (Reference http://flask.pocoo.org/docs/0.12/patterns/packages/)
