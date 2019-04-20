@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ###
 # arberweb
 # Arber Xhindoli github:@arberx
