@@ -1,51 +1,70 @@
-{% extends "bootstrap/base.html" %}
-{% block html_attribs %} lang="en"{% endblock %}
+{% extends "bootstrap/base.html" %} {% block html_attribs %} lang="en"{%
+endblock %}
 <!--Arber Xhindoli github:@arberx-->
-{% block title %}
-    ArberX // Home
-{% endblock %}
+{% block title %} ArberX // Home {% endblock %}
 
 <!-- CSS/Fonts -->
-{% block styles %} {{super()}}
-<link rel="stylesheet" href="{{url_for('.static', filename='css/style.css')}}">
-<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
-<link rel="icon" href="{{url_for('.static', filename='smily.png')}}">
-{% endblock %}
+{% block styles %} {{ super() }}
+<link
+	rel="stylesheet"
+	href="{{url_for('.static', filename='css/style.css')}}"
+/>
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" />
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada"
+	rel="stylesheet"
+/>
+<link rel="icon" href="{{url_for('.static', filename='smily.png')}}" />
+{% endblock %} {% block content %}
 
-{% block content %}
+<!--particles-->
+<div id="particles-js"></div>
 
-    <!--particles-->
-    <div id="particles-js">
-    </div>
+<div id="container1">
+	<div class="intro-message">
+		<center>
+			<h1 class="name">Arber Xhindoli</h1>
+			<ul class="list-inline intro-social-buttons">
+				<li>
+					<a
+						href="https://github.com/arberx"
+						class="btn btn-default btn-lg"
+						><i class="fa fa-github fa-fw"></i>
+						<span class="wrapp">Github</span></a
+					>
+				</li>
+				<li>
+					<a
+						href="{{url_for('.static', filename='Arber_Xhindoli_Resume.pdf')}}"
+						class="btn btn-default btn-lg"
+						><i class="fa fa-linkedin fa-fw"></i>
+						<span class="wrapp">Resume</span></a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/arberx"
+						class="btn btn-default btn-lg"
+						><i class="fa fa-linkedin fa-fw"></i>
+						<span class="wrapp">LinkedIn</span></a
+					>
+				</li>
+				<li>
+					<a
+						href="https://gitlab.com/arberx"
+						class="btn btn-default btn-lg"
+						><i class="fa fa-github fa-fw"></i>
+						<span class="wrapp">GitLab</span></a
+					>
+				</li>
+			</ul>
+		</center>
+	</div>
+</div>
 
-    <div id=container1>
-    <div class="intro-message">
-        <center>
-        <h1 class="name">Arber Xhindoli</h1>
-        <ul class="list-inline intro-social-buttons">
-            <li>
-                <a href="https://github.com/arberx" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="wrapp">Github</span></a>
-            </li>
-            <li>
-                <a href="{{url_for('.static', filename='Arber_Xhindoli_Resume.pdf')}}" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="wrapp">Resume</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/arberx" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="wrapp">LinkedIn</span></a>
-            </li>
-            <li>
-                <a href="mailto:axhindol@umich.edu" class="btn btn-default btn-lg"><i class="fa fa-email fa-fw"></i> <span class="wrapp">Email</span></a>
-            </li>
-        </ul>
-        </center>
-    </div>
-    </div>
-
-{% endblock%}
-
-{% block scripts %}
+{% endblock%} {% block scripts %}
 <!--  Scripts-->
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="/static/js/particle.js"></script>
-{{super()}}
+{{ super() }}
 {% endblock %}

@@ -7,11 +7,6 @@
 # https://hub.docker.com/_/alpine
 FROM alpine:3.7
 
-# copy cwd
-ENV APP_HOME /arberweb
-WORKDIR $APP_HOME
-COPY . .
-
 # install system dependencies
 RUN apk add --no-cache \
     autoconf \
@@ -26,14 +21,16 @@ RUN apk add --no-cache \
     python3 \
     nodejs
 
+# copy cwd
+ENV APP_HOME /arberweb
+WORKDIR $APP_HOME
+COPY . .
+
 # clean
 RUN find . | grep -E "(__pycache__|env|.egg-info|node_modules|\.pyc|\.pyo$)" | xargs rm -rf
 
 # install dependencies and build
 RUN make install && make build
-
-# export app name
-RUN export FLASK_APP=arberweb
 
 # docker run -p 8000:8000 arberweb
 # exec gunicorn server

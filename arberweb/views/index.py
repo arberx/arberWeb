@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ###
 # arberweb
 # Arber Xhindoli github:@arberx
@@ -5,6 +6,7 @@
 
 import arberweb
 import flask
+import os
 import flask_bootstrap
 
 # set up bootstap for main route
@@ -31,3 +33,6 @@ def lets_encrpyt(tmp):
     with open('.well-known/acme-challenge/{}'.format(token_value)) as f:
         answer = f.readline().strip()
     return answer
+
+if __name__ == "__main__":
+    arberweb.app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
