@@ -1,0 +1,25 @@
+###
+# arberweb
+# Arber Xhindoli github:@arberx
+###
+
+# Automate the build and deployment on pushes to master.
+steps:
+    - name: "gcr.io/cloud-builders/docker"
+      args: ["build", "-t", "gcr.io/arberweb/arberweb", "."]
+    - name: "gcr.io/cloud-builders/docker"
+      args: ["push", "gcr.io/arberweb/arberweb"]
+    - name: "gcr.io/cloud-builders/gcloud"
+      args:
+          [
+              "beta",
+              "run",
+              "deploy",
+              "arberweb",
+              "--image",
+              "gcr.io/arberweb/arberweb",
+              "--region",
+              "us-central1",
+          ]
+images:
+    - gcr.io/arberweb/arberweb
