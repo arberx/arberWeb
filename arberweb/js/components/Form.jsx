@@ -7,21 +7,33 @@ import React from "react";
 import styled from "styled-components";
 // local includes
 import { device } from "./MediaBreak";
+import Fade from "react-reveal/Fade";
+import ContentDiv from "./ContentDiv";
 
-const FormDiv = styled.div`
-	display: flex;
-	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
-		flex-direction: column;
-		margin-top: 150px;
-		padding-left: 150px;
-	}
-	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
-		flex-direction: row;
-		margin-top: 300px;
-		padding-left: 150px;
-	}
-	grid-row: fifth-line / sixth-line;
-	justify-content: space-between;
+const FormRow = styled.div`
+	display: block;
+	margin: 0 0 80px;
+`;
+
+const P = styled.p`
+	margin: 0;
+`;
+
+const LabelStyle = styled.label`
+	font-size: 18px;
+	line-height: 40px;
+	padding: 0;
+	margin: 0 0 24px;
+`;
+
+const TextArea = styled.textarea`
+	display: inline-block;
+	font-size: 30px;
+	line-height: 40px;
+	border: none;
+	outline: 0;
+	border-bottom: 1px dashed #000000;
+	transition: color 0.2s ease-out;
 `;
 
 export default class FormComponent extends React.Component {
@@ -46,29 +58,63 @@ export default class FormComponent extends React.Component {
 	}
 
 	handleSubmit(event) {
-		alert("An essay was submitted: " + this.state.value);
 		event.preventDefault();
+		fetch("/form_submission", {
+			method: "POST",
+			headers: {
+				"Content-type": "application/json"
+			},
+			body: JSON.stringify(this.state)
+		})
+			.then(result => result.json())
+			.then(info => {
+				console.log(info);
+			});
+		this.setState({
+			name: "",
+			email: "",
+			description: ""
+		});
 	}
 
 	render() {
 		return (
-			<FormDiv>
-				<form onSubmit={this.handleSubmit}>
-					<label>
-						Name:
-						<textarea value={this.state.name} onChange={this.handleChange} />
-					</label>
-					<label>
-						Email:
-						<textarea value={this.state.email} onChange={this.handleChange} />
-					</label>
-					<label>
-						What are you looking for:
-						<textarea value={this.state.description} onChange={this.handleChange} />
-					</label>
-					<input type="submit" value="Submit" />
-				</form>
-			</FormDiv>
+			<ContentDiv row="fifth-line / sixth-line">
+				<Fade left>
+					<form onSubmit={this.handleSubmit}>
+						<FormRow>
+							<LabelStyle>
+								Name:
+								<P>
+									<TextArea
+										value={this.state.name}
+										onChange={this.handleChange}
+									/>
+								</P>
+							</LabelStyle>
+							<LabelStyle>
+								<P>
+									Email:
+									<TextArea
+										value={this.state.email}
+										onChange={this.handleChange}
+									/>
+								</P>
+							</LabelStyle>
+							<LabelStyle>
+								<P>
+									What are you looking for:
+									<TextArea
+										value={this.state.description}
+										onChange={this.handleChange}
+									/>
+								</P>
+							</LabelStyle>
+							<input type="submit" value="Submit" />
+						</FormRow>
+					</form>
+				</Fade>
+			</ContentDiv>
 		);
 	}
 }

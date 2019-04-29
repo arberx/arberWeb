@@ -14,6 +14,7 @@ setup(
     install_requires=[
         'Flask',
         'flask_bootstrap',
-        'gunicorn'
+        'gunicorn',
+        'Flask-Mail'
     ]
 )
