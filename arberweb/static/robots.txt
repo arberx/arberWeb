@@ -4,5 +4,4 @@
 # 3. A bot must protect its own existence as long as such protection does not conflict with the First or Second Law.
 
 User-agent: *
-Disallow: /static/Arber_Xhindoli_Resume.pdf
-Disallow: /static/axlogo/*
+Disallow: /static/

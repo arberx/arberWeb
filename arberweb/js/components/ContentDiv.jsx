@@ -17,18 +17,16 @@ const ContentDiv = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
-		margin-top: 190px;
+		margin-top: 150px;
+		padding-left: 50px;
 	}
-	@media ${device.laptop},
-		${device.tablet},
-		${device.desktop},
-		${device.desktopL} {
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
 		margin-top: 215px;
+		padding-left: 600px;
 	}
 	max-width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 10%;
 	text-align: left;
 	line-height: 3.4em;
 `;

@@ -32,6 +32,6 @@ RUN find . | grep -E "(__pycache__|env|.egg-info|node_modules|\.pyc|\.pyo$)" | x
 # install dependencies and build
 RUN make install && make build
 
-# docker run -p 8000:8000 arberweb
+# export PORT=localhost:8000 && docker run -p 8000:8000 arberweb
 # exec gunicorn server
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 arberweb:app

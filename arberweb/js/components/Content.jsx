@@ -16,10 +16,7 @@ const Row1 = styled.div`
 		font-size: 25px;
 		width: 240px;
 	}
-	@media ${device.laptop},
-		${device.tablet},
-		${device.desktop},
-		${device.desktopL} {
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
 		font-size: 30px;
 		width: 500px;
 	}
@@ -28,14 +25,13 @@ const Row1 = styled.div`
 
 const Row2 = styled.div`
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
-		font-size: 45px;
+		font-size: 40px;
+		width: 300px;
 	}
-	@media ${device.laptop},
-		${device.tablet},
-		${device.desktop},
-		${device.desktopL} {
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
 		font-size: 50px;
 		margin-left: 0;
+		width: 350px;
 	}
 	font-weight: 900;
 	display: inline-block;
