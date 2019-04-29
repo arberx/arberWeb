@@ -22,11 +22,12 @@ const AboutDiv = styled.div`
 		padding-left: 150px;
 	}
 	grid-row: fourth-line / fifth-line;
-	justify-content: 	grid-column: line1 / line2;
-	grid-row: sixth-line;
+	justify-content: center;
 `;
 
-const PictureDiv = styled.div``;
+const PictureDiv = styled.div`
+	padding-left: 10px;
+`;
 
 const ArberImg = styled.img`
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {

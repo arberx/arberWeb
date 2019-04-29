@@ -39,7 +39,7 @@ export default class App extends React.Component {
 				<HeaderComp onClickAbout={this.replaceContent} onClickMain={this.mainClicked} />
 				<Content />
 				<About />
-				{/* <FormComponent /> */}
+				<FormComponent />
 			</RootGrid>
 		);
 	}
