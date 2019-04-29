@@ -35,25 +35,19 @@ const MenuDiv = styled.div`
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
 		flex-direction: column;
 	}
-	@media ${device.laptop},
-		${device.tablet},
-		${device.desktop},
-		${device.desktopL} {
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
 		flex-direction: row;
 	}
 `;
 
 const ArberLogoImg = styled.img`
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
-		width: 150px;
-		height: 150px;
-	}
-	@media ${device.laptop},
-		${device.tablet},
-		${device.desktop},
-		${device.desktopL} {
 		width: 200px;
 		height: 200px;
+	}
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
+		width: 250px;
+		height: 250px;
 	}
 `;
 
@@ -68,14 +62,11 @@ const ButtonLink = styled.button`
 	background: none;
 	margin: auto;
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
-		font-size: 12.5px;
+		font-size: 14px;
 		margin-right: "0em";
 		margin-top: "10em";
 	}
-	@media ${device.laptop},
-		${device.tablet},
-		${device.desktop},
-		${device.desktopL} {
+	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
 		font-size: 15px;
 		margin-right: ${props => props.margin || "0em"};
 	}
@@ -92,20 +83,15 @@ export default class HeaderComp extends React.Component {
 			<HeaderDiv>
 				<LogoDiv>
 					<a href="" onClick={onClickMain}>
-						<ArberLogoImg
-							src="../../static/axlogo/axlogo2.svg"
-							alt="Arber X"
-						/>
+						<ArberLogoImg src="../../static/axlogo/axlogo2.svg" alt="Arber X" />
 					</a>
 				</LogoDiv>
 				<MenuDiv>
 					<ButtonLink margin="1.5em" onClick={onClickMain}>
-						{" "}
-						Home{" "}
+						Home
 					</ButtonLink>
 					<ButtonLink margin="1.5em" onClick={onClickAbout}>
-						{" "}
-						About{" "}
+						About
 					</ButtonLink>
 					<ButtonLink> Get in Touch </ButtonLink>
 				</MenuDiv>

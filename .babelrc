@@ -1,6 +1,3 @@
 {
-  "plugins": [
-    ["transform-react-jsx"],
-    ["babel-plugin-styled-components"] 
-  ]
+	"plugins": [["transform-react-jsx"], ["babel-plugin-styled-components"]]
 }

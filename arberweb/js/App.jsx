@@ -6,9 +6,10 @@ Arber Xhindoli github:@arberx
 import React from "react";
 // local includes
 import RootGrid from "./components/RootGrid";
+import HeaderComp from "./components/Header";
 import Content from "./components/Content";
 import About from "./components/About";
-import ContentDiv from "./components/ContentDiv";
+import FormComponent from "./components/Form";
 
 export default class App extends React.Component {
 	constructor(props) {
@@ -35,12 +36,10 @@ export default class App extends React.Component {
 		let MainContent = isClicked ? <About /> : <Content />;
 		return (
 			<RootGrid>
-				<ContentDiv>
-					<p>
-						This page is in progress! Check out my
-						<a href="/"> homepage</a> for more information about me.
-					</p>
-				</ContentDiv>
+				<HeaderComp onClickAbout={this.replaceContent} onClickMain={this.mainClicked} />
+				<Content />
+				<About />
+				{/* <FormComponent /> */}
 			</RootGrid>
 		);
 	}
