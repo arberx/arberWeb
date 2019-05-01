@@ -10,12 +10,11 @@ import os
 import json
 import flask_bootstrap
 from flask_mail import Mail, Message
-from arberweb.server_secret import PASS
 
 arberweb.app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 arberweb.app.config['MAIL_PORT'] = 465
-arberweb.app.config['MAIL_USERNAME'] = 'xhindoliarber@gmail.com'
-arberweb.app.config['MAIL_PASSWORD'] = PASS
+arberweb.app.config['MAIL_USERNAME'] = os.environ.get("EMAIL")
+arberweb.app.config['MAIL_PASSWORD'] = os.environ.get("PASS")
 arberweb.app.config['MAIL_USE_TLS'] = False
 arberweb.app.config['MAIL_USE_SSL'] = True
 
@@ -43,13 +42,15 @@ def form_submission():
     """ Handles form data. """
     if flask.request.is_json:
         form_content = flask.request.get_json()
-        msg = Message('Form sent from arberweb', sender='xhindoliarber@gmail.com', recipients=[
-                      'xhindoliarber@gmail.com'])
+        form_name = form_content["name"]
+        msg = Message(form_name + " contacted you through arberweb/tutor.", sender=EMAIL, recipients=[
+                      EMAIL])
         msg.body = json.dumps(form_content)
         mail.send(msg)
+        return "Okay", 200
     else:
         print("Recieved none json POST.")
-    return "Okay", 200
+        return "Not okay", 404
 
 
 @arberweb.app.route('/robots.txt')

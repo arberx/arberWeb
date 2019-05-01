@@ -12,7 +12,6 @@ const RootGrid = styled.div`
 	display: grid;
 	@import url("https://fonts.googleapis.com/css?family=Montserrat");
 	font-family: "Montserrat", sans-serif;
-	background-color: white;
 	color: black;
 	font-size: 16px;
 	grid-template-columns: [rside] 1fr [content] 2fr [lside] 1fr;
