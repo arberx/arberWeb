@@ -102,24 +102,21 @@ export default class About extends React.Component {
 					<Fade left>
 						<H1Style> Who I am </H1Style>
 						<ULStyle>
-							<li> Full-time Software Engineer at top tech company. </li>
+							<li> Full-time Software Engineer at a top tech company. </li>
 							<br />
-							<li> Graduate of a top 5 engineering program (Go Blue!). </li>
+							<li> Graduate of a top 5 engineering program - Go Blue! </li>
 							<br />
-							<li> Tutoring/mentoring for over 5 years. </li>
+							<li> 5+ years of tutor/mentor experience. </li>
 						</ULStyle>
 					</Fade>
 					<Fade left>
 						<H1Style> What I do </H1Style>
 						<ULStyle>
-							<li> Customized learning plans depending on ability. </li>
+							<li> </li>
 							<br />
-							<li>
-								Custom projects similar to how a programming would be taught at a
-								top university.
-							</li>
+							<li> Provide customized learning plans depending on ability. </li>
 							<br />
-							<li>Able to teach at all skills and age levels!</li>
+							<li> Teach at all skills and age levels. </li>
 						</ULStyle>
 					</Fade>
 				</TextDiv>
