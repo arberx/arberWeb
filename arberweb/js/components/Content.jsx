@@ -77,8 +77,8 @@ export default class Content extends React.Component {
 						<TextLoop children={subjectArray} interval={3000} />
 					</Row2>
 					<Row3>
-						I'm a software engineer based in NYC, specializing in{" "}
-						<strong>Distributed Computing.</strong>
+						I'm a software engineer based in NYC, specializing in
+						<strong>Distributed Systems.</strong>
 					</Row3>
 				</Fade>
 			</ContentDiv>
