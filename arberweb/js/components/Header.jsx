@@ -18,11 +18,9 @@ const HeaderDiv = styled.div`
 	top: 0;
 	left: 0;
 	right: 0;
-	margin-top: 30px;
 	max-width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 30px;
 `;
 
 const LogoDiv = styled.div`
