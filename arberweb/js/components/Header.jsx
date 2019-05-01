@@ -78,7 +78,7 @@ export default class HeaderComp extends React.Component {
 	}
 
 	render() {
-		const { onClickAbout, onClickMain } = this.props;
+		const { onClickAbout, onClickMain, onClickContact } = this.props;
 		return (
 			<HeaderDiv>
 				<LogoDiv>
@@ -93,7 +93,7 @@ export default class HeaderComp extends React.Component {
 					<ButtonLink margin="1.5em" onClick={onClickAbout}>
 						About
 					</ButtonLink>
-					<ButtonLink> Get in Touch </ButtonLink>
+					<ButtonLink onClick={onClickContact}> Contact </ButtonLink>
 				</MenuDiv>
 			</HeaderDiv>
 		);
