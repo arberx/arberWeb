@@ -11,10 +11,14 @@ import json
 import flask_bootstrap
 from flask_mail import Mail, Message
 
+# get EMAIL and PASS from environment
+EMAIL = os.environ.get("EMAIL")
+PASS = os.environ.get("PASS")
+
 arberweb.app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 arberweb.app.config['MAIL_PORT'] = 465
-arberweb.app.config['MAIL_USERNAME'] = os.environ.get("EMAIL")
-arberweb.app.config['MAIL_PASSWORD'] = os.environ.get("PASS")
+arberweb.app.config['MAIL_USERNAME'] = EMAIL
+arberweb.app.config['MAIL_PASSWORD'] = PASS
 arberweb.app.config['MAIL_USE_TLS'] = False
 arberweb.app.config['MAIL_USE_SSL'] = True
 
