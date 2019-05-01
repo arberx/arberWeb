@@ -20,7 +20,7 @@ const HeaderDiv = styled.div`
 	right: 0;
 	max-width: 1140px;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: 20px;
 `;
 
 const LogoDiv = styled.div`

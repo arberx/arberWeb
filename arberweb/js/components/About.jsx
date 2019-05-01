@@ -112,6 +112,7 @@ export default class About extends React.Component {
 					<Fade left>
 						<H1Style> What I do </H1Style>
 						<ULStyle>
+
 							<li> I teach people how to code! </li>
 							<br />
 							<li>
