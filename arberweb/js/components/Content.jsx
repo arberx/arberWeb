@@ -78,7 +78,7 @@ export default class Content extends React.Component {
 					</Row2>
 					<Row3>
 						I'm a software engineer based in NYC, specializing in
-						<strong>Distributed Systems.</strong>
+						<strong> Distributed Systems.</strong>
 					</Row3>
 				</Fade>
 			</ContentDiv>
