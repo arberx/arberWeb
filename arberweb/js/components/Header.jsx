@@ -18,9 +18,11 @@ const HeaderDiv = styled.div`
 	top: 0;
 	left: 0;
 	right: 0;
+	margin-top: 30px;
 	max-width: 1140px;
 	margin-left: auto;
-	margin-right: 20px;
+	margin-right: auto;
+	padding: 0 30px;
 `;
 
 const LogoDiv = styled.div`
@@ -32,7 +34,6 @@ const MenuDiv = styled.div`
 	display: flex;
 	@media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
 		flex-direction: column;
-		margin-right: 20px;
 	}
 	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
 		flex-direction: row;
