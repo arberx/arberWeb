@@ -1,9 +1,19 @@
 # arber-web
 Current Website! : https://www.arberx.com/
 
-Super Simple Website made with Python-Flask. Utilizes flask-bootstrap (mobile optimized), particles.js running on an nginx server.
+## The Stack
 
-**Not included is the nginx server configuration.** See [this](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04) great `digitalocean` guide to run a flask app on a nginx server.
+`Flask-ReactJS` application serving two routes: `/` and `/tutor`.
+
+`/` - Utilizes Flask-Bootstrap to create the content.
+
+`/tutor` - React app using a variety of libraries including `styled-components`.
+
+## Deployment
+
+Currently relies on `google-cloud run` for automated deployment. A cool service that always you to build and deploy stateless docker contianer web applications, and handles network and management for you.
+
+Before finding this service, I was handrolling nginx configs and running the server off of my own `DigitalOcean` machine.
 
 ## Setup
 **Assumes using python3.6 and node 6.5+**
@@ -23,4 +33,4 @@ $ source env/bin/activate
 ### Run
 ``` make run```
 
-App will be running on localhost:8000
+App will be running on localhost:4000
