@@ -82,9 +82,9 @@ export default class HeaderComp extends React.Component {
 		return (
 			<HeaderDiv>
 				<LogoDiv>
-					<a href="" onClick={onClickMain}>
-						<ArberLogoImg src="../../static/axlogo/axlogo2.svg" alt="Arber X" />
-					</a>
+					{/* <a href="" onClick={onClickMain}> */}
+					<ArberLogoImg src="../../static/axlogo/axlogo2.svg" alt="Arber X" />
+					{/* </a> */}
 				</LogoDiv>
 				<MenuDiv>
 					<ButtonLink margin="1.5em" onClick={onClickMain}>
