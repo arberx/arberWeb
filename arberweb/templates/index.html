@@ -8,8 +8,13 @@
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet" />
 <link rel="icon" href="{{url_for('.static', filename='smily.png')}}" />
-{% endblock %} {% block content %}
-
+{% endblock %} 
+{% block head %}
+{{ super() }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136707601-2"></script>
+<script src="/static/js/ga.js"></script>
+{% endblock %}
+{% block content %}
 <!--particles-->
 <div id="particles-js"></div>
 
