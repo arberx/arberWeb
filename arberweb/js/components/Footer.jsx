@@ -12,6 +12,7 @@ const FooterDiv = styled.div`
 	grid-column: content;
 	grid-row: fifth-line;
 	display: flex;
+	position: absoulte;
 	justify-content: space-evenly;
 	align-self: center;
 	flex-direction: row;
@@ -20,7 +21,6 @@ const FooterDiv = styled.div`
 		width: 100%;
 	}
 	@media ${device.laptop}, ${device.tablet}, ${device.desktop}, ${device.desktopL} {
-		margin-top: 100px;
 		width: 50%;
 		padding-left: 150px;
 	}

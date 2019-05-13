@@ -5,7 +5,7 @@ __pycache__
 *env/
 *.egg-info
 node_modules*
-arberweb/static/js/bundle.js
+arberweb/static/js/*
 package-lock.json
 server_secret.py
 *.DS_Store
