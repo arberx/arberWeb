@@ -1,46 +1,50 @@
 {
-	"name": "arberweb",
-	"version": "0.1.0",
-	"description": "Website of Arber Xhindoli",
-	"main": "Index.jsx",
-	"scripts": {
-		"build": "webpack -p --progress --config webpack.config.js",
-		"dev-build": "webpack --progress -d --config webpack.config.js",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch": "webpack --progress -d --config webpack.config.js --watch"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/arberx/arber-web.git"
-	},
-	"author": "Arber Xhindoli (arberx)",
-	"bugs": {
-		"url": "https://github.com/arberx/arber-web/issues"
-	},
-	"homepage": "https://github.com/arberx/arber-web#readme",
-	"devDependencies": {
-		"@babel/core": "^7.4.4",
-		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
-		"@babel/preset-env": "^7.4.4",
-		"@babel/preset-react": "^7.0.0",
-		"babel-loader": "^8.0.5",
-		"babel-plugin-import": "^1.11.0",
-		"babel-plugin-react-css-modules": "^5.2.4",
-		"babel-plugin-styled-components": "^1.10.0",
-		"babel-plugin-transform-react-jsx": "^6.24.1",
-		"css-loader": "^2.1.1",
-		"file-loader": "^3.0.1",
-		"image-webpack-loader": "^4.6.0",
-		"style-loader": "^0.23.1",
-		"webpack": "^4.30.0",
-		"webpack-cli": "^3.3.1"
-	},
-	"dependencies": {
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"react-reveal": "^1.2.2",
-		"react-text-loop": "^2.0.1",
-		"styled-components": "^4.2.0",
-		"yup": "^0.27.0"
-	}
+  "name": "arberweb",
+  "version": "0.1.0",
+  "description": "Website of Arber Xhindoli",
+  "main": "Index.jsx",
+  "scripts": {
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress -d --config webpack.config.js --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arberx/arber-web.git"
+  },
+  "author": "Arber Xhindoli (arberx)",
+  "bugs": {
+    "url": "https://github.com/arberx/arber-web/issues"
+  },
+  "homepage": "https://github.com/arberx/arber-web#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-react-css-modules": "^5.2.4",
+    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "image-webpack-loader": "^4.6.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-reveal": "^1.2.2",
+    "react-text-loop": "^2.0.1",
+    "styled-components": "^4.2.0",
+    "yup": "^0.27.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
