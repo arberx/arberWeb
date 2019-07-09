@@ -12,9 +12,12 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import FormComponent from "./components/Form";
 import styled from "styled-components";
+// local includes
+import { device } from "./components/MediaBreak";
 
 const WIPdiv = styled.div`
   display: flex;
+  flex-direction: column;
   font-size: 30px;
   width: 500px;
   font-weight: 1200;
@@ -25,6 +28,20 @@ const WIPdiv = styled.div`
   justify-content: center;
   grid-column: content;
   grid-row: third-line / fourth-line;
+`;
+
+const ArberLogoImg = styled.img`
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL} {
+    width: 200px;
+    height: 200px;
+  }
+  @media ${device.laptop},
+    ${device.tablet},
+    ${device.desktop},
+    ${device.desktopL} {
+    width: 500px;
+    height: 500px;
+  }
 `;
 
 export default class App extends React.Component {
@@ -71,7 +88,8 @@ export default class App extends React.Component {
         // /> // {MainContent} */}
         {/* // <Footer /> */}
         <WIPdiv>
-          <h1> WIP</h1>
+          <ArberLogoImg src="../../static/axlogo/axconsultinghorizontal.svg" />
+          <h3>WIP</h3>
         </WIPdiv>
       </RootGrid>
     );

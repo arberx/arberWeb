@@ -1,14 +1,16 @@
-<!— arberweb/tutor.html —>
-{% extends "layout.html" %}
-{% block head %}
-  {{ super() }}
-    <!--Arber Xhindoli github:@arberx-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="icon" href="{{url_for('.static', filename='terminal.png')}}">
-    <title> ArberX // Tutor </title>
-{% endblock %}
-{% block body %}
-    <div id="content">
-    <script src="../static/js/bundle.js" type="text/javascript"></script>
-{% endblock %}
+<!— arberweb/consult.html —>
+{% extends "layout.html" %} {% block head %}
+{{ super() }}
+<!--Arber Xhindoli github:@arberx-->
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+/>
+<link rel="icon" href="{{url_for('.static', filename='terminal.png')}}" />
+<title>ArberX // Consulting</title>
+{% endblock %} {% block body %}
+<div id="content">
+  <script src="../static/js/bundle.js" type="text/javascript"></script>
+  {% endblock %}
+</div>

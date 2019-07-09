@@ -34,4 +34,4 @@ RUN make install && make build
 
 # export PORT=localhost:8000 && docker run -p 8000:8000 arberweb
 # exec gunicorn server
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 arberweb:app
+CMD exec gunicorn --bind :$PORT --workers 4 --threads 8 arberweb:app
