@@ -35,7 +35,7 @@ def main_led_route():
     return flask.render_template('index.html')
 
 
-@arberweb.app.route('/tutor', methods=["GET"])
+@arberweb.app.route('/consult', methods=["GET"])
 def tutor_route():
     """ Route is the entry point for REACT app """
     return flask.render_template('tutor.html')
