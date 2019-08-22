@@ -1,17 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    {% block head %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140032137-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-140032137-1');
-    </script>
-    {% endblock %}
+    {% block head %} {% endblock %}
     <body>
-    {% block body %}{% endblock %}
+      {% block body %}{% endblock %}
     </body>
   </head>
 </html>
