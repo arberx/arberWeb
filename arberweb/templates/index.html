@@ -16,18 +16,6 @@ endblock %}
 />
 <link rel="icon" href="{{url_for('.static', filename='smily.png')}}" />
 {% endblock %} {% block head %}
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=UA-140032137-1"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "UA-140032137-1");
-</script>
 {{ super() }}
 {% endblock %} {% block content %}
 <!--particles-->
