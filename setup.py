@@ -15,6 +15,7 @@ setup(
         'Flask',
         'flask_bootstrap',
         'gunicorn',
-        'Flask-Mail'
+        'Flask-Mail',
+        'flask-talisman'
     ]
 )

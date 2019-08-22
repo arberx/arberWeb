@@ -5,10 +5,15 @@
 ###
 
 import flask
+import flask_talisman
 import arberweb.config
 
 # app is a single object used by all the code modules in this package
 app = flask.Flask(__name__)  # pylint: disable=invalid-name
+
+# enforce https, currently allow fetching of all external resources
+# TODO: stricter csp: https://github.com/GoogleCloudPlatform/flask-talisman
+flask_talisman.Talisman(app, content_security_policy=None)
 
 # Read settings from config module (arberweb/config.py)
 app.config.from_object('arberweb.config')
