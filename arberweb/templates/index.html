@@ -5,15 +5,9 @@ endblock %}
 
 <!-- CSS/Fonts -->
 {% block styles %} {{ super() }}
-<link
-  rel="stylesheet"
-  href="{{url_for('.static', filename='css/style.css')}}"
-/>
+<link rel="stylesheet" href="{{url_for('.static', filename='css/style.css')}}" />
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" />
-<link
-  href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet" />
 <link rel="icon" href="{{url_for('.static', filename='smily.png')}}" />
 {% endblock %} {% block head %}
 {{ super() }}
@@ -27,37 +21,24 @@ endblock %}
       <h1 class="name">Arber Xhindoli</h1>
       <ul class="list-inline intro-social-buttons">
         <li>
-          <a href="https://github.com/arberx" class="btn btn-default btn-lg"
-            ><i class="fa fa-github fa-fw"></i>
-            <span class="wrapp">Github</span></a
-          >
+          <a href="https://github.com/arberx" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
+            <span class="wrapp">Github</span></a>
         </li>
         <li>
-          <a
-            href="{{url_for('.static', filename='Arber-Xhindoli-Resume.pdf')}}"
-            class="btn btn-default btn-lg"
-            ><i class="fa fa-linkedin fa-fw"></i>
-            <span class="wrapp">Resume</span></a
-          >
+          <a href="{{url_for('.static', filename='Arber-Xhindoli-Resume.pdf')}}" class="btn btn-default btn-lg"><i
+              class="fa fa-linkedin fa-fw"></i>
+            <span class="wrapp">Resume</span></a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/arberx"
-            class="btn btn-default btn-lg"
-            ><i class="fa fa-linkedin fa-fw"></i>
-            <span class="wrapp">LinkedIn</span></a
-          >
+          <a href="https://www.linkedin.com/in/arberx" class="btn btn-default btn-lg"><i
+              class="fa fa-linkedin fa-fw"></i>
+            <span class="wrapp">LinkedIn</span></a>
         </li>
         <li>
-          <a href="https://gitlab.com/arberx" class="btn btn-default btn-lg"
-            ><i class="fa fa-github fa-fw"></i>
-            <span class="wrapp">GitLab</span></a
-          >
+          <a href="https://gitlab.com/arberx" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
+            <span class="wrapp">GitLab</span></a>
         </li>
       </ul>
-      <a href="/consult">
-        <p>Looking for a consultant on your next project?</p></a
-      >
     </center>
   </div>
 </div>
