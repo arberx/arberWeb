@@ -3,11 +3,11 @@ Current Website! : https://www.arberx.com/
 
 ## The Stack
 
-`Flask-ReactJS` application serving two routes: `/` and `/tutor`.
+`Flask` application serving two routes: `/`.
 
 `/` - Utilizes Flask-Bootstrap to create the content.
 
-`/tutor` - React app using a variety of libraries including `styled-components`.
+Lots of `React` not shown, currently WIP.
 
 ## Deployment
 
