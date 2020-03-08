@@ -17,12 +17,25 @@ p {
 	font-size: 18px;
 	color: black;
 }
-.name {
-	font-family: "Monoton", cursive;
+
+@font-face{
+    font-family: "Monoton";
+    src: url('../css-fonts/Monoton-Regular.ttf');
 }
+
+@font-face{
+    font-family: "Montserrat Subrayada";
+    src: url('../css-fonts/MontserratSubrayada-Regular 400.ttf');
+}
+
+.name {
+	font-family: "Monoton";
+}
+
 .wrapp {
 	font-family: "Montserrat Subrayada", sans-serif;
 }
+
 .intro-message {
 	position: relative;
 	padding-top: 0%;
