@@ -3,11 +3,9 @@ Current Website! : https://www.arberx.com/
 
 ## The Stack
 
-`Flask` application serving two routes: `/`.
+`Flask` application serving `/`.
 
-`/` - Utilizes Flask-Bootstrap to create the content.
-
-Lots of `React` not shown, currently WIP.
+`/` - Utilizes pure CSS, and HTML to create the content.
 
 ## Deployment
 
@@ -16,7 +14,7 @@ Currently relies on `google-cloud run` for automated deployment. A cool service 
 Before finding this service, I was handrolling nginx configs and running the server off of my own `DigitalOcean` machine.
 
 ## Setup
-**Assumes using python3.6 and node 6.5+**
+**Assumes using python3.6**
 
 ### Setup env's
 ```shellsession
@@ -33,4 +31,4 @@ $ source env/bin/activate
 ### Run
 ``` make run```
 
-App will be running on localhost:4000
+App will be running on localhost:5000

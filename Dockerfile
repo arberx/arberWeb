@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     libpng-dev \
     make \
     nasm \
-    python3 \
+    python3
 
 # copy cwd
 ENV APP_HOME /arberweb
@@ -29,8 +29,8 @@ COPY . .
 RUN find . | grep -E "(__pycache__|env|.egg-info|\.pyc|\.pyo$)" | xargs rm -rf
 
 # install dependencies and build
-RUN make install && make build
+RUN make install
 
-# export PORT=localhost:8000 && docker run -p 8000:8000 arberweb
+# docker run -p 8000:8000 -e PORT=8000 arberweb
 # exec gunicorn server
 CMD exec gunicorn --bind :$PORT --workers 4 --threads 8 arberweb:app
