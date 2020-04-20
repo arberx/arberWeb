@@ -19,7 +19,6 @@ RUN apk add --no-cache \
     make \
     nasm \
     python3 \
-    nodejs
 
 # copy cwd
 ENV APP_HOME /arberweb
@@ -27,7 +26,7 @@ WORKDIR $APP_HOME
 COPY . .
 
 # clean
-RUN find . | grep -E "(__pycache__|env|.egg-info|node_modules|\.pyc|\.pyo$)" | xargs rm -rf
+RUN find . | grep -E "(__pycache__|env|.egg-info|\.pyc|\.pyo$)" | xargs rm -rf
 
 # install dependencies and build
 RUN make install && make build

@@ -1,51 +1,48 @@
-{% extends "bootstrap/base.html" %} {% block html_attribs %} lang="en"{%
-endblock %}
-
 <!--Arber Xhindoli github:@arberx-->
-{% block title %} ArberX // Home {% endblock %}
+<!—- arberweb/index.html -—>
 
-<!-- CSS/Favicon -->
-{% block styles %} {{ super() }}
-<link rel="stylesheet" href="{{url_for('.static', filename='css/style.css')}}" />
-<link rel="icon" href="{{url_for('.static', filename='smily.png')}}" />
-{% endblock %} {% block head %}
-{{ super() }}
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+  <title>Arber Xhindoli // Software Engineer </title>
+  <link rel="smily icon" href="{{url_for('.static', filename='smily.png')}}"/>
+{% endblock %}
 
-<!--Particles-->
-<div id="particles-js"></div>
-
-<div id="container1">
-  <div class="intro-message">
-    <center>
-      <h1 class="name">Arber Xhindoli</h1>
-      <ul class="list-inline intro-social-buttons">
-        <li>
-          <a href="https://github.com/arberx" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
-            <span class="wrapp">Github</span></a>
-        </li>
-        <li>
-          <a href="{{url_for('.static', filename='Arber-Xhindoli-Resume.pdf')}}" class="btn btn-default btn-lg"><i
-              class="fa fa-linkedin fa-fw"></i>
-            <span class="wrapp">Resume</span></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/arberx" class="btn btn-default btn-lg"><i
-              class="fa fa-linkedin fa-fw"></i>
-            <span class="wrapp">LinkedIn</span></a>
-        </li>
-        <li>
-          <a href="https://gitlab.com/arberx" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
-            <span class="wrapp">GitLab</span></a>
-        </li>
-      </ul>
-    </center>
+{% block body %}
+  {{ super() }}
+  <div id="particles-js"></div>
+  <div class="center-div">
+    <h1 class="name">Arber</h1>
+    <h1 class="name">Xhindoli</h1>
+    <div class="list-content">
+        <ul>
+          <div class="two-column">
+              <li>
+                <a href="https://github.com/arberx" class="btn btn--white btn--animated" target="_blank">
+                  <span class="wrap">Github</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{url_for('.static', filename='Arber-Xhindoli-Resume.pdf')}}" class="btn btn--white btn--animated" target="_blank">
+                  <span class="wrap">Resume</span>
+                </a>
+              </li>
+          </div>
+          <div class="two-column">
+              <li>
+                <a href="https://www.linkedin.com/in/arberx" class="btn btn--white btn--animated" target="_blank">
+                  <span class="wrap">LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/arberx" class="btn btn--white btn--animated" target="_blank">
+                  <span class="wrap">GitLab</span>
+                </a>
+              </li>
+          </div>
+        </ul>
+    </div>
   </div>
-</div>
-{% endblock%} {% block scripts %}
-
-<!-- Scripts-->
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="/static/js/particle.js"></script>
-{{ super() }}
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="{{url_for('.static', filename='js/particles.js')}}"></script>
 {% endblock %}

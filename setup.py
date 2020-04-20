@@ -13,9 +13,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Flask',
-        'flask_bootstrap',
         'gunicorn',
-        'Flask-Mail',
         'flask-talisman'
     ]
 )

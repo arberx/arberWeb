@@ -1,12 +1,17 @@
+<!--Arber Xhindoli github:@arberx-->
+<!—- arberweb/layout.html -—>
 <!DOCTYPE html>
-<html>
-
-<head>
-  {% block head %} {% endblock %}
-
-<body>
-  {% block body %}{% endblock %}
-</body>
-</head>
-
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="favicon" href="{{url_for('.static', filename='smiley.png')}}" />
+		<link rel="stylesheet" href="{{url_for('.static', filename='css/style.css')}}" />
+		{% block head %}
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}
+		{% endblock %}
+	</body>
 </html>

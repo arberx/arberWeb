@@ -23,5 +23,7 @@ app.config.from_object('arberweb.config')
 # Reference: http://flask.pocoo.org/docs/0.12/config/
 app.config.from_envvar('ARBERWEB_SETTINGS', silent=True)
 
+app.config["TEMPLATES_AUTO_RELOAD"] = True
+
 # (Reference http://flask.pocoo.org/docs/0.12/patterns/packages/)
 import arberweb.views  # noqa: E402  pylint: disable=wrong-import-position

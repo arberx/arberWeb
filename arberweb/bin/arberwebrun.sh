@@ -13,8 +13,5 @@ export FLASK_DEBUG=True
 export FLASK_APP=arberweb
 export ARBERWEB_SETTINGS=config.py
 
-# Compile js in the background
- npm run watch &
-
 # Run development server
 flask run --port 5000
