@@ -43,7 +43,7 @@
     "react-reveal": "^1.2.2",
     "react-text-loop": "^2.0.1",
     "styled-components": "^4.2.0",
-    "yup": "^0.27.0",
+    "yup": "^0.30.0",
     "snyk": "^1.231.0"
   },
   "snyk": true
